@@ -1,0 +1,19 @@
+import wikipedia
+
+# stores user history in this list.
+User_History = []
+# take input from the user for searching on wikipedia
+Question = input("Enter the input you wish to find meaning of: ")
+# supplying user input into wikipedia api using wikipedia.page
+page = wikipedia.page(Question)
+
+# Creates a dict to store the page data containing its title, content, url of the page and the summary on wiki.
+page_data = {
+    'title': page.title,
+    'content': page.content,
+    'url': page.url,
+    'summary': page.summary,
+}
+
+# Prints the page data
+print(page_data)
