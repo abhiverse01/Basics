@@ -1,0 +1,20 @@
+The_Dictionary = {
+    "Set": "Collection of well defined objects.",
+    "Name": "An Identifier given to an object or a person.",
+    "Gun": "A equipment, a machine used to shoot bullets.",
+    "Code": "Line of statements made for a computer to understand a particular command",
+    "Song": "A vocal or a sound composed using various sounds, instruments, a melody."
+}
+
+# print(The_Dictionary)
+# Taking input from the user.
+Question = input("Enter the input you wish to find meaning of: ")
+print(The_Dictionary[str(Question)])
+print(The_Dictionary[Question])
+
+# print(The_Dictionary[Question])
+# If loop to iterate over the dictionary.
+if Question in The_Dictionary.keys():
+    print(The_Dictionary[str(Question)])
+else:
+    print("We don't know it's meaning yet!")
