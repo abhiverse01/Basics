@@ -1,0 +1,50 @@
+# importing the random module of python to generate a random value
+import random
+
+
+# defining a random message function to generate a message everytime this function is called
+def random_message():
+    # a list of messages to randomly choose from.
+    messages = [
+        "Hope you have a great day!",
+        "Something's Cooking ;)",
+        "Life's Smiling, Smile Back.",
+        "Great Things require consistent efforts. Keep Going!",
+        "The path to your smile lies ahead. Take a step!",
+        "Life is straight like a circle. Don't make sense, Keep vibing!",
+        "A day is more bigger than a whole life. Make your day great!",
+        "The secret to a happy you lies in the mirror. Just have a look at it :)",
+        "I Love you. Come on! Say this to her.",
+        "This is special, You!",
+        "Come on! Life's not giving lemons. It's spicing up your journey.",
+        "Its so romantic seeing you in this dress ;)",
+        "Hope, the day is making something great for you.",
+        "Hello love, you look fab :)",
+        "Hey, try something great, suits your look of today",
+        "You are stronger than you know.",
+        "You are capable of achieving great things.",
+        "Every day is a new opportunity to be your best self.",
+        "Believe in yourself and all that you are.",
+        "Know that there is something inside you that is greater than any obstacle.",
+        "Positive thoughts bring positive results. Believe in the power of positivity.",
+        "Why did the tomato turn red? Because it saw the salad dressing!",
+        "Why don't scientists trust atoms? Because they make up everything.",
+        "Why was the math book sad? Because it had too many problems.",
+        "Why was the computer cold? It left its Windows open.",
+        "Why was the computer nervous? Because it had a byte.",
+        "I love you more than words can describe.",
+        "You are the light in my darkness.",
+        "Being with you is like a dream come true.",
+        "You are my everything.",
+        "I'm so lucky to have you in my life.",
+        "Hello, it's great to see you again.",
+        "Bonjour, comment ça va?(French for 'Hello, how are you?')",
+        "Hola, ¿cómo estás?(Spanish for 'Hello, how are you?')",
+    ]
+    # pushing the list into the choice function of the random module to randomly choose a value from the list.
+    level = random.choice(messages)
+    print(level)
+
+
+#Calling the random message function.
+random_message()
